@@ -61,7 +61,6 @@ html {
        padding: 0;
        overflow-x: hidden;
        font-family: 'Nunito Sans', sans-serif;
-       background-color: #fff;
      }
      
      img {
@@ -74,4 +73,32 @@ html {
        width: 100%;
        margin: 0 auto;
        padding: 0 20px;
+     }
+
+     .visually-hidden {
+       clip: rect(0 0 0 0);
+       clip-path: inset(50%);
+       height: 1px;
+       overflow: hidden;
+       position: absolute;
+       white-space: nowrap;
+       width: 1px;
+     }
+
+     .countries-light-mode {
+       background: #FFF;
+       color: #111517;
+     }
+
+     .countries-dark-mode {
+       background: #2B3844;
+       color: #FFF;
+     }
+
+     .countries-light-mode-body {
+       background: #FAFAFA;
+     }
+
+     .countries-dark-mode-body {
+       background: #202C36;
      }
