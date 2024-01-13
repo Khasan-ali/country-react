@@ -17,7 +17,7 @@ export const Hero = () => {
               <Wrapper>
               <div className="hero">
               <div className={`hero-search-section ${classNames}`}>
-              <span class="material-symbols-outlined">search</span>
+              <span className="material-symbols-outlined">search</span>
               <input className={`search-input ${classNames}`} type="text" placeholder="Search for a country…" />
               </div>
 

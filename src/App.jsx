@@ -1,7 +1,10 @@
 import './App.css';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import { Header } from './Components/Header';
 import { useTheme } from './Hooks/useTheme';
-import { Hero } from './Components/Hero';
+import { Home } from './Pages/Home';
+import { Detailing } from './Pages/Detailing';
 
 function App() {
   const [state,] = useTheme()
@@ -15,11 +18,14 @@ function App() {
   }
 
   return (
-    <>
+    <>  
     <Header />
     <div className="container">
     <main>
-      <Hero />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='home/:productName' element={<Detailing />} />
+      </Routes>
     </main>
     </div>
     </>
